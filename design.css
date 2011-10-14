@@ -1,0 +1,204 @@
+html, body { 
+margin:0; 
+padding:0;
+background-color:#8A8CD9;
+} 
+
+#pagewidth{ }
+
+#header {
+position:relative; 
+height:10%; 
+background-color:#3E41BE; 
+width:100%;
+display:block;
+overflow:auto;
+color:#B1B1B1;
+text-align:center;
+} 
+
+#menu {
+width:15%; 
+float:left; 
+position:relative; 
+background-color:#8A8CD9;
+text-align:center;
+color:#252671;
+}
+#menu h2  {
+padding: 4px;
+margin: 4px;
+}
+#menu ul  {
+list-style-type:none;
+padding: 2px;
+margin-top: 0;
+}
+#menu li  {
+padding: 1px;
+text-align: left;
+padding-left: 20px;
+margin: 4px;
+background-color:#CCCCCC;
+/* border: solid 1px #000000; */
+}
+
+#twocols  {
+width:85%;
+float:right; 
+position:relative; 
+}
+
+#rightcol {
+width:20%; 
+float:right; 
+position:relative; 
+background-color:#8A8CD9;
+text-align:right;
+color:#252671;
+font-weight:bold;
+}
+#rightcol td  {
+}
+#rightcol th  {
+height:50px;
+text-align:center;
+}
+
+#content {
+background-color:#CCCCCC;  
+float: left; 
+position: relative; 
+width:80%;
+text-align: center;
+}
+.bb_tab {
+color:#252671;
+background-color:#CCCCCC;
+}
+.bb_very_big_font{
+font:small-caps 150% Verdana;
+text-align: center;
+}
+.bb_big_font{
+font:small-caps 110% Verdana;
+}
+.blackboard{
+color:#252671;
+background-color:#CCCCCC;
+text-align: center;
+}
+.bb_input{
+font-weight: bold ; 
+text-align: center; 
+font: 80% Verdana;
+font-weight:bold;
+}
+#footer {
+height:20%; 
+background-color:#252671; 
+clear:both;
+display:block;
+overflow:auto;
+color:#B1B1B1;
+text-align:center;
+}
+
+/* ********************************************************************* */
+/*                      news styles by Gerrit Bohne                      */
+/* ********************************************************************* */
+
+.news_div{
+width:100%; 
+height: 150px; 
+text-align:justify; 
+background-color:#cccccc;
+}
+
+.news_description{
+width:100%; 
+background-color:#cccccc; 
+text-align: center; 
+font:small-caps 110% Verdana;
+}
+
+.news_subject{
+width: 100%; 
+font-weight: bold ; 
+text-align: center; 
+text-shadow:black 3px 2px 4px; 
+font-size:1.5em; color:blue; 
+background-color:#cccccc;
+}
+
+.news_text{
+width:100%; 
+text-align: center; 
+background-color:#afafaf; 
+text-shadow:5 
+}
+
+.news_datname{
+width:100%; 
+padding-bottom: 2px; 
+background-color:#B1B1B1; 
+font-size: 10px; 
+font:small-caps 80% Verdana;
+}
+
+.news_name{
+width:50%; 
+float: left; 
+background-color:#cccccc;
+}
+
+.news_timestamp{
+width:50%; 
+float: right; 
+text-align: right; 
+background-color:#cccccc;
+}
+
+.news_input{
+background-color:#cccccc;
+}
+
+.news_link{
+background-color:#cccccc;
+}
+
+
+/* ******************************************************************** */ 
+/* Clearfix: http://csscreator.com/attributes/containedfloat.php        */
+/* ******************************************************************** */
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  
+
+
+
+
+/* ******************************************************************** */ 
+/*                      printer styles                                  */ 
+/* ******************************************************************** */ 
+
+@media print{ 
+/*hide the left column when printing*/ 
+#menu{display:none;} 
+
+/*hide the right column when printing*/ 
+#rightcol{display:none;} 
+#twocols, #maincol{width:100%; float:none;}
+}
